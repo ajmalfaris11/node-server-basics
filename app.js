@@ -10,8 +10,6 @@ const server = http.createServer(async (req, res) => {
     res.end(); // End the response
   }
 
-
-
   // Check if the request is for the "/add" URL and is a GET request
   else if (req.url === "/add" && req.method === "GET") {
     // Respond with a message if the "/add" URL is accessed
@@ -24,17 +22,11 @@ const server = http.createServer(async (req, res) => {
     // Respond with a message if the "/admin" URL is accessed
     res.write("Hello. I am admin page!");
     res.end(); // End the response
-  }
-  
-  
-  else {
+  } else {
     // Respond with a message if the requested route is not defined
     res.end("no route present ");
   }
 });
-
-
-
 
 // Start the server and have it listen on port 3200
 server.listen(3200, () => {
