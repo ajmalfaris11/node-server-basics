@@ -18,6 +18,13 @@ const server = http.createServer(async (req, res) => {
     res.write("Hello. I am add page!");
     res.end(); // End the response
   }
+
+  // Check if the request is for the "/admin" URL and is a GET request
+  else if (req.url === "/admin" && req.method === "GET") {
+    // Respond with a message if the "/admin" URL is accessed
+    res.write("Hello. I am admin page!");
+    res.end(); // End the response
+  }
   
   
   else {
