@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ajmalfaris11/node-server-basics/issues"
   },
-  "homepage": "https://github.com/ajmalfaris11/node-server-basics#readme"
+  "homepage": "https://github.com/ajmalfaris11/node-server-basics#readme",
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
